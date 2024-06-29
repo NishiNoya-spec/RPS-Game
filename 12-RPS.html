@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>RPS</title>
+    <link rel="stylesheet" href="12-RPS.css">
+
+  </head>
+  
+  <body>
+
+    <p class="title">Rock Paper Scissors</p>
+
+    <button class="js-rock-button move-button"><img src="rock-emoji.png" class="move-icon"></button>
+
+    <button class="js-paper-button move-button"><img src="paper-emoji.png" class="move-icon"></button> 
+
+    <button class="js-scissors-button move-button"><img src="scissors-emoji.png" class="move-icon"></button>
+
+    <p class="js-result result"></p>
+    <p class="js-moves">
+      You
+      <img src="scissors-emoji.png" class="move-icon">
+      <img src="scissors-emoji.png" class="move-icon">
+      Computer
+    </p>
+    <p class="js-score score"></p>
+
+    <button onclick="score.wins=0; score.losses=0; score.ties=0; localStorage.removeItem('score'); updateScoreElement();" class="reset-score-button">Reset score</button>
+
+    <button class="js-auto-play-button auto-play-button" onclick="autoPlay();">Auto Play</button>
+
+    <script src="12-RPS.js"></script>
+
+  </body>
+
+</html>
